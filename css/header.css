@@ -1,0 +1,157 @@
+/* Da estilos al header y lo fija para cuando se haga scroll */
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0.5rem;
+  min-height: 4rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #061524;
+  z-index: 100;
+}
+/*Contenedor de logo y lema */
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+/*Fijo el ancho del logo y el alto queda libre guardando las relaciones con el ancho.*/
+.logo {
+  width: 3rem;
+}
+/* Doy estilos y lo despego un poco del logo */
+.lema {
+  color: #1dc4e0;
+  font-family: "sport";
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+/*El nav toma el ancho del conteido que tenga */
+.nav-menu {
+  width: fit-content;
+}
+/* Doy estilos al ul y li */
+.ul-nav {
+  display: flex;
+  padding: 0;
+  width: fit-content;
+  margin-bottom: 0 !important; /*Soluciona conflicto con boostrap*/
+}
+.li-nav {
+  list-style: none;
+  margin: 0.5rem;
+  align-self: center;
+  width: fit-content;
+  transition: all 1s;
+}
+.b-bottom-style:hover {
+  border-bottom: 1px solid #e74c18;
+}
+/*Conflicto con estilos de boostrap a los <a> por eso agrego !important*/
+a {
+  font-size: 1rem !important;
+  color: #1dc4e0 !important;
+  text-decoration: none !important;
+}
+/* Estilos al boton del carrito */
+.carrito {
+  width: 2rem;
+  height: 2rem;
+  background-color: #e74c18;
+  border: 3px solid #1dc4e0;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/* Cambio de estilos al posicionar el raton sobre él */
+.carrito:hover {
+  background-color: #eddfa7;
+  border: 3px solid #e74c18;
+}
+/*Saco el menu mobile*/
+.burger {
+  display: none;
+}
+
+/* Mobile pantalla menores a 722px*/
+
+@media screen and (max-width: 722px) {
+  /*Display block ubica los elementos uno abajo del otro*/
+  header {
+    display: block;
+  }
+  /* .nav-menu {
+    display: none;
+  } */
+  .logo-container {
+    justify-content: space-between;
+    margin-left: 0;
+  }
+  .lema {
+    margin-left: 0;
+  }
+  /* Estilos al boton del carrito */
+  .radio-btn {
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  /* Cambio de estilos al posicionar el raton sobre él */
+  .carrito:hover {
+    background-color: #eddfa7;
+    border: 3px solid #e74c18;
+  }
+  /*Esta clase se pone y se saca al apretar en el menu hamburguesa con javascript
+  Se aplica al ul que en este estado esta oculto */
+  .active {
+    display: flex;
+    flex-direction: column;
+    color: #061524;
+    padding: 0;
+  }
+  /* Doy otros estilos al menu para que abarque el ancho total
+  cambio a fixed para que se superponga  */
+  #menu {
+    width: 100vw;
+    background-color: #061524;
+    position: fixed;
+    left: 0;
+  }
+
+  .ul-nav {
+    display: none;
+    width: fit-content;
+  }
+  /*Centrado de las opciones dle menu*/
+  .li-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+  }
+  /* Contenedor del icono del menu 
+  Lo posiciono arriba a la derecha con postion absolute, top y right */
+  .burger {
+    display: block;
+    height: auto;
+    width: 2.5rem;
+    cursor: pointer;
+  }
+  .close {
+    background-image: url(../img/menu-close.svg);
+    background-size: cover;
+    height: 2.5rem;
+  }
+  .open {
+    background-image: url(../img/menu-open.svg);
+    background-size: cover;
+    height: 2.5rem;
+  }
+}

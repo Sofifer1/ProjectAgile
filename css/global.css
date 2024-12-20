@@ -1,0 +1,31 @@
+/* Variables globales */
+:root {
+  --color-one: #e74c18;
+  --color-two: #061524;
+  --color-tree: #eddfa7;
+  --color-four: #1dc4e0;
+  --color-five: #fdf5ef;
+  /*fuente*/
+  --primary-font: "Montserrat", sans-serif;
+}
+/* Obtengo la tipografia */
+@font-face {
+  font-family: "sport";
+  src: url("../tipografias/Sportesia.otf") format("opentype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  }
+html {
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  padding-top: 4rem;
+  position: relative;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+}

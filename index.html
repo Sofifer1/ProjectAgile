@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Blue - Inicio</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/banner.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32-circule.png" id="favicon">
+
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img class="logo" src="./img/logo-casablue.png" alt="grupo 10">
+      <h1 class="lema">Casa Blue</h1>
+      <div id="burger-icon" class="burger close" onclick="openClose()"></div>
+    </div>
+    <nav class="nav-menu">
+      <ul class="ul-nav" id="menu">
+        <li class="li-nav b-bottom-style"><a href="index.html">Inicio</a></li>
+        <li class="li-nav b-bottom-style"><a href="contacto.html">Contacto</a></li>
+        <li class="li-nav b-bottom-style">
+          <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="li-nav">
+          <a href="carrito.html"><img src="./img/carrito.svg" class="carrito" alt="carrito"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <!-- banner -->
+    <section id="banner" class="d-flex">
+      <div class="card-banner">
+        <h2>MUEVETE CON ESTILO</h2>
+      </div>
+    </section>
+
+    <div class="container">
+      <div id="search" class="container">
+        <input type="text" class="input-search" placeholder="Buscá por productos, marcas y más...">
+      </div>
+
+      <!-- popular: tendencia hoy -->
+      <section id="popular">
+
+        <!-- División contenedora del titulo
+          e imagenes -->
+        <div class="container articulo-grid">
+
+          <h2>LO MÁS VENDIDO</h2>
+          <!-- Div para mostrar todas las imagenes e info -->
+          <div id="list-popular">
+
+            <!-- element 01 -->
+            <div class="articulo-item">
+              <a href="./product/art10-camphom.html">
+                <img class="img-prod" src="./img/Campera-Polar-1.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">CAMPERA HOMBRE RICHMOND</p>
+                  <p class="articulo-item-detail-subtitle">Indumentaria-Campera</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 02 -->
+            <div class="articulo-item">
+              <a href="./product/art1-calza.html">
+                <img class="img-prod" src="./img/CALZA1.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">CALZA TERMICA SNOW</p>
+                  <p class="articulo-item-detail-subtitle">Indumentaria-Calza termica</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 03 -->
+            <div class="articulo-item">
+              <a href="./product/art4-remhom.html">
+                <img class="img-prod" src="./img/Remera-running.jpg" alt="img3">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">REMERA HOMBRE RUNNING </p>
+                  <p class="articulo-item-detail-subtitle">Indumentaria-Running</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 04 -->
+            <div class="articulo-item">
+              <a href="/product/art2-short.html">
+                <img class="img-prod" src="./img/SHORTCALZA1.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">SHORT HOMBRE</p>
+                  <p class="articulo-item-detail-subtitle">Indumentaria</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 05 -->
+            <div class="articulo-item">
+              <a href="./product/art3-zaphom.html">
+                <img class="img-prod" src="./img/Zapat-runner.jpg" alt="img5">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">ZAPATILLAS NIKE</p>
+                  <p class="articulo-item-detail-subtitle">Zapatillas</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 06 -->
+            <div class="articulo-item">
+              <a href="./product/art5-campmuj.html">
+                <img class="img-prod" src="./img/campera-mujer.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">CAMPERA MICROPOLAR</p>
+                  <p class="articulo-item-detail-subtitle">Indumentaria</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 07 -->
+            <div class="articulo-item">
+              <a href="./product/art6-zapmuj.html">
+                <img class="img-prod" src="./img/zapatillas-mujer.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">ZAPATILLAS DE RUNNING</p>
+                  <p class="articulo-item-detail-subtitle">Zapatillas</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 08 -->
+            <div class="articulo-item">
+              <a href="./product/art7-moch.html">
+                <img class="img-prod" src="./img/mochila-25-lts.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">MOCHILA BIRGUS 25LTS</p>
+                  <p class="articulo-item-detail-subtitle">Mochilas</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 09 -->
+            <div class="articulo-item">
+              <a href="./product/art8-matera.html">
+                <img class="img-prod" src="./img/matera-grande.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">MATERA GRANDE</p>
+                  <p class="articulo-item-detail-subtitle">Accesorios</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- element 10 -->
+            <div class="articulo-item">
+              <a href="./product/art9-sandkid.html">
+                <img class="img-prod" src="./img/sandalias-nino.jpg" alt="*">
+
+                <div class="articulo-item-detail">
+                  <p class="articulo-item-detail-title">SANDALIAS DE NIÑO CALI</p>
+                  <p class="articulo-item-detail-subtitle">Indumentaria Niños</p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- top-rated: mostrar novedades-->
+      <section id="top-rated">
+
+        <!-- División contenedora del titulo
+                e imagenes -->
+        <div class="container">
+
+          <h2>LANZAMIENTOS</h2>
+
+          <div id="list-top-rated" class="articulo-scroller">
+
+            <!-- element 01 -->
+            <div class="articulo-item-v2">
+              <div class="novedades">
+                <img src="./img/buzo-corto.jpg" alt="" class="img-prod">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">BUZO CORTO CON CAPUCHA</p>
+                <p class="articulo-item-detail-subtitle-v2">Indumentaria mujer</p>
+              </div>
+            </div>
+
+            <!-- element 02 -->
+            <div class="articulo-item-v2">
+              <div class="novedades">
+                <img src="./img/buzo-bordo.jpg" alt="" class="img-prod">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">BUZO CON CAPUCHA</p>
+                <p class="articulo-item-detail-subtitle-v2">Indumentaria Hombre</p>
+              </div>
+            </div>
+
+            <!-- element 03 -->
+            <div class="articulo-item-v2">
+              <div class="novedades">
+                <img src="./img/zapatillas-negra.jpg" alt="" class="img-prod">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">ZAPATILLAS URBANAS</p>
+                <p class="articulo-item-detail-subtitle-v2">Calzado</p>
+              </div>
+            </div>
+
+            <!-- element 04 -->
+            <div class="articulo-item-v2">
+              <div class="novedades">
+                <img src="./img/colchoneta-yoga.jpg" alt="" class="img-prod">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">COLCHONETA YOGA</p>
+                <p class="articulo-item-detail-subtitle-v2">Entrenamiento 5MM</p>
+              </div>
+            </div>
+
+            <!-- element 05 -->
+            <div class="articulo-item-v2">
+              <div class="novedades">
+                <img src="./img/mochila-gris.jpg" alt="" class="img-prod">
+              </div>
+              <div class="articulo-item-detail-v2">
+                <p class="articulo-item-detail-title-v2">MOCHILA PORTANOTEBOOK GRIS</p>
+                <p class="articulo-item-detail-subtitle-v2">Mochilas</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="menu-footer">
+    <nav class="nav-footer">
+      <ul class="ul-footer">
+        <li class="li-footer">
+          <a href="./footer/terminos.html">Terminos y Condiciones</a>
+        </li>
+        <li class="li-footer">
+          <a href="./footer/privacidad.html">Política de Privacidad</a>
+        </li>
+        <li class="li-footer">
+          <a href="./footer/devoluciones.html">Política de Devoluciones</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright © 2024 Casa Blue</p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

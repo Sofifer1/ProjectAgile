@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Blue - Contacto</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32-circule.png" id="favicon">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="logo" src="./img/logo-casablue.png" alt="grupo 10">
+      </a>
+      <a href="index.html">
+        <h1 class="lema">Casa Blue</h1>
+      </a>
+      <div id="burger-icon" class="burger close" onclick="openClose()"></div>
+    </div>
+    <nav class="nav-menu">
+      <ul class="ul-nav" id="menu">
+        <li class="li-nav b-bottom-style"><a href="index.html">Inicio</a></li>
+        <li class="li-nav b-bottom-style"><a href="contacto.html">Contacto</a></li>
+        <li class="li-nav b-bottom-style">
+          <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="li-nav">
+          <a href="carrito.html"><img src="./img/carrito.svg" class="carrito" alt="carrito"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-form">
+    <div class="img-form">
+      <img src="./img/logo-casablue.png" alt="logo" class="logo-form">
+      <div class="text-container">
+        <p class="text-img">
+          Rellena los campos y envia tu consulta. <br>
+          Nos comprometemos a contestar dentro de las 24hs!
+        </p>
+      </div>
+    </div>
+    <div class="form-container">
+      <form action="https://formsubmit.co/57f5c04448acb93a77e3c1e6dad6d250" method="post" class="form">
+        <div class="radio-btn">
+          <input type="radio" id="minorista" name="opciones" value="minorista" required>
+          <label for="minorista">Minorista</label>
+          <input type="radio" id="mayorista" name="opciones" value="mayorista" required>
+          <label for="mayorista">Mayorista</label>
+        </div>
+        <div class="box-form">
+          <input type="text" id="nombre" name="nombre" autocomplete="on" required>
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="box-form">
+          <input type="text" id="apellido" name="apellido" autocomplete="on" required>
+          <label for="apellido">Apellido</label>
+        </div>
+        <div class="box-form">
+          <input type="text" id="mail" name="mail" autocomplete="on" required>
+          <label for="mail" id="mail-label">E-mail</label>
+        </div>
+        <label style="display: block;">Buscas un producto en particular?</label>
+        <div class="box-file">
+          <input type="file" id="file" name="file" accept="image/png, image/jpeg" style="display: none">
+          <label for="file" class="input-file" id="label-file">Selecciona una imagen</label>
+        </div>
+        <div class="box-file">
+          <label for="consulta">Tu consulta:</label> <br>
+          <textarea name="consulta" id="consulta" rows="2" required></textarea><br>
+        </div>
+        <button type="submit" class="disabled" id="btn-submit" disabled>Enviar</button>
+      </form>
+    </div>
+  </main>
+  <footer class="menu-footer">
+    <nav class="nav-footer">
+      <ul class="ul-footer">
+        <li class="li-footer">
+          <a href="./footer/terminos.html">Terminos y Condiciones</a>
+        </li>
+        <li class="li-footer">
+          <a href="./footer/privacidad.html">Política de Privacidad</a>
+        </li>
+        <li class="li-footer">
+          <a href="./footer/devoluciones.html">Política de Devoluciones</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright © 2024 Casa Blue</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/form.js"></script>
+</body>
+
+</html>

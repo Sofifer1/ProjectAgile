@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  </style>
+  <title>Casa Blue - Carrito</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32-circule.png" id="favicon">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="../index.html">
+        <img class="logo" src="../img/logo-casablue.png" alt="grupo 10">
+      </a>
+      <a href="../index.html">
+        <h1 class="lema">Casa Blue</h1>
+      </a>
+      <div id="burger-icon" class="burger close" onclick="openClose()"></div>
+    </div>
+    <nav class="nav-menu">
+      <ul class="ul-nav" id="menu">
+        <li class="li-nav b-bottom-style"><a href="../index.html">Inicio</a></li>
+        <li class="li-nav b-bottom-style"><a href="../contacto.html">Contacto</a></li>
+        <li class="li-nav b-bottom-style">
+          <a href="../sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="li-nav">
+          <a href="../carrito.html"><img src="../img/carrito.svg" class="carrito" alt="carrito"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- articulo 02 short-calza -->
+    <section id="short-calza">
+      <div class="art">
+        <div class="carro">
+          <div class="carrusel">
+            <!-- botones -->
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <!-- imagenes -->
+            <div class="imag1">
+              <img src="../img/SHORTCALZA1.jpg" alt="">
+            </div>
+            <div class="imag">
+              <img src="../img/SHORTCALZA2.jpg" alt="">
+            </div>
+            <div class="imag">
+              <img src="../img/SHORTCALZA3.jpeg" alt="">
+            </div>
+            <!-- navegacion -->
+            <div class="navegacionmanual">
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+              <label for="radio6" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+        <!-- descripcion -->
+        <div class="info-prod">
+          <h2 class="titulo-art">SHORT DEPORTIVO HOMBRE</h2>
+          <div class="descripcion">
+            <p>
+              Short con calza termica para hombres, ideal deporte ciclismo -
+              running- etc
+            </p>
+          </div>
+          <!-- seleccion de talle -->
+          <div class="talle">
+            <label for="talle">Talle</label>
+            <select name="talle" id="talle">
+              <option disabled selected value="">Selecciona tu talle</option>
+              <option value="38">38</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+              <option value="44">44</option>
+              <option value="46">46</option>
+              <option value="48">48</option>
+            </select>
+          </div>
+          <p class="precio-art">$ 16.000,00</p>
+          <button class="btn-add">Añade al Carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="menu-footer">
+    <nav class="nav-footer">
+      <ul class="ul-footer">
+        <li class="li-footer">
+          <a href="../footer/terminos.html">Terminos y Condiciones</a>
+        </li>
+        <li class="li-footer">
+          <a href="../footer/privacidad.html">Política de Privacidad</a>
+        </li>
+        <li class="li-footer">
+          <a href="../footer/devoluciones.html">Política de Devoluciones</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright © 2024 Casa Blue</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

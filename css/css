@@ -1,0 +1,123 @@
+/* Variables globales */
+:root {
+  --color-one: #e74c18;
+  --color-two: #061524;
+  --color-tree: #eddfa7;
+  --color-four: #1dc4e0;
+  --color-five: #fdf5ef;
+  /*fuente*/
+  --primary-font: "Montserrat", sans-serif;
+}
+
+/* Obtengo la tipografia */
+@font-face {
+  font-family: "sport";
+  src: url("../tipografias/Sportesia.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  padding-top: 4rem;
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100vh;
+}
+
+/* Mobile pantalla menores a 696px*/
+
+@media screen and (max-width: 722px) {
+
+  /*Display block ubica los elementos uno abajo del otro*/
+  header {
+    display: block;
+  }
+
+  /* Estilos al boton del carrito */
+  .radio-btn {
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  /* Cambio de estilos al posicionar el raton sobre él */
+  .carrito:hover {
+    background-color: #eddfa7;
+    border: 3px solid #e74c18;
+  }
+
+  /*Saco el menu mobile*/
+  .burger {
+    display: none;
+    width: fit-content;
+  }
+
+  /*Esta clase se pone y se saca al apretar en el menu hamburguesa con javascript
+    Se aplica al ul que en este estado esta oculto */
+  .active {
+    display: flex;
+    flex-direction: column;
+    color: #061524;
+    padding: 0;
+  }
+
+  /* Doy otros estilos al menu para que abarque el ancho total
+  cambio a fixed para que se superponga  */
+  #menu {
+    width: 100vw;
+    background-color: #061524;
+    position: fixed;
+    left: 0;
+  }
+
+  .ul-nav {
+    display: none;
+    width: fit-content;
+  }
+
+  /*Centrado de las opciones dle menu*/
+  .li-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+  }
+
+  /*Tamaño*/
+  .menu-icon {
+    width: 2rem;
+  }
+
+  /* Contenedor del icono del menu 
+    Lo posiciono arriba a la derecha con postion absolute, top y right */
+  .burger {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    min-width: 2rem;
+    top: 2.5vh;
+    right: 2.5vw;
+    cursor: pointer;
+  }
+
+  /*CSS de las cards del index */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Esto permite que los elementos se envuelvan a la siguiente línea si no caben en una sola fila */
+
+  }
+
+
+}

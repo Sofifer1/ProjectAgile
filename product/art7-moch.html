@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  </style>
+  <title>Casa Blue - Carrito</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32-circule.png" id="favicon">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="../index.html">
+        <img class="logo" src="../img/logo-casablue.png" alt="grupo 10">
+      </a>
+      <a href="../index.html">
+        <h1 class="lema">Casa Blue</h1>
+      </a>
+      <div id="burger-icon" class="burger close" onclick="openClose()"></div>
+    </div>
+    <nav class="nav-menu">
+      <ul class="ul-nav" id="menu">
+        <li class="li-nav b-bottom-style"><a href="../index.html">Inicio</a></li>
+        <li class="li-nav b-bottom-style"><a href="../contacto.html">Contacto</a></li>
+        <li class="li-nav b-bottom-style">
+          <a href="../sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="li-nav">
+          <a href="../carrito.html"><img src="../img/carrito.svg" class="carrito" alt="carrito"></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- articulo 07 mochila -->
+    <section id="mochila">
+      <div class="art">
+        <div class="carro">
+          <div class="carrusel">
+            <!-- botones -->
+            <input type="radio" name="radio-btn" id="radio19">
+            <input type="radio" name="radio-btn" id="radio20">
+            <input type="radio" name="radio-btn" id="radio21">
+            <!-- imagenes -->
+            <div class="imag1">
+              <img src="../img/mochila-25-lts.jpg" alt="">
+            </div>
+            <div class="imag">
+              <img src="../img/mochila-25-lts1.jpeg" alt="">
+            </div>
+            <div class="imag">
+              <img src="../img/mochila-25-lts2.jpeg" alt="">
+            </div>
+            <!-- navegacion -->
+            <div class="navegacionmanual">
+              <label for="radio19" class="manual-btn"></label>
+              <label for="radio20" class="manual-btn"></label>
+              <label for="radio21" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+        <!-- descripcion -->
+        <div class="info-prod">
+          <h2 class="titulo-art">MOCHILA RUNNING</h2>
+          <div class="descripcion">
+            <p>
+              Mochila deportiva, ideal deporte ciclismo - running.
+            </p>
+          </div>
+          <!-- seleccion de talle -->
+          <div class="talle">
+            <label for="color">Color</label>
+            <select name="talle-id" id="talle-id">
+                <option disabled selected value="">Selecciona tu color preferido</option>
+                <option value="rojo">rojo</option>
+                <option value="azul">azul</option>
+                <option value="celeste">celeste</option>
+                <option value="verde">verde</option>
+                <option value="amarillo">amarillo</option>
+                <option value="negro">negro</option>
+            </select>
+        </div>
+          <p class="precio-art">$ 45.000,00</p>
+          <button class="btn-add">Añade al Carrito</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="menu-footer">
+    <nav class="nav-footer">
+      <ul class="ul-footer">
+        <li class="li-footer">
+          <a href="../footer/terminos.html">Terminos y Condiciones</a>
+        </li>
+        <li class="li-footer">
+          <a href="../footer/privacidad.html">Política de Privacidad</a>
+        </li>
+        <li class="li-footer">
+          <a href="../footer/devoluciones.html">Política de Devoluciones</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright © 2024 Casa Blue</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
